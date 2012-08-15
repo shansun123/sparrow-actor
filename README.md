@@ -45,3 +45,7 @@ Step3. 注册Actor到管理类
 Step4. 发送消息到指定Actor
 
 	actorManager.send(new SimpleMessage(System.currentTimeMillis()), null, "demo-actor");
+
+类设计图：
+
+![Actor类图](http://ww2.sinaimg.cn/large/600db342gw1dvxnfo8thmj.jpg)
