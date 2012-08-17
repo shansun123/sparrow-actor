@@ -305,6 +305,7 @@ public class DefaultActorManager implements ActorManager {
 			if (!actors.containsKey(actor.getName())) {
 				try {
 					((AbstractActor) actor).setManager(this);
+					actors.put(actor.getName(), actor);
 				} catch (Exception e) {
 					throw e instanceof RuntimeException ? (RuntimeException) e : new RuntimeException("mapped exception: " + e, e);
 				}
